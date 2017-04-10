@@ -1,4 +1,4 @@
-package cn.yy.pc;
+package reptileUtlis;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
