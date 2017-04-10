@@ -13,10 +13,13 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 爬虫工具
+ */
 public class PcMain {
 
     // 地址
-    private static final String URL = "http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gbk&word=ͼƬ&fr=ala&ala=1&alatpl=others&pos=0";
+    private static final String URL = "网址";
     // 获取img标签正则
     private static final String IMGURL_REG = "<img.*src=(.*?)[^>]*?>";
     // 获取src路径的正则
