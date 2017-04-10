@@ -93,9 +93,8 @@ public class PcUtils {
 
 		return result.toString();
 	}
-
 	/**
-	 * 用正则过滤
+	 * 用正则过滤0.0
 	 * @param targetStr
 	 * @param patternStr
 	 * @return
