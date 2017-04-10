@@ -14,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 爬虫工具
+ * 爬虫工具(抓取网页中的图片)
  */
 public class PcMain {
 
