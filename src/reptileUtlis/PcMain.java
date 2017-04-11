@@ -1,10 +1,6 @@
 package reptileUtlis;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -13,8 +9,10 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 /**
  * 爬虫工具(抓取网页中的图片)
+ *
  */
 public class PcMain {
 
@@ -79,7 +77,7 @@ public class PcMain {
     private List<String> getImageSrc(List<String> listimageurl){
         List<String> listImageSrc=new ArrayList<String>();
         for (String image:listimageurl){
-            Matcher matcher=Pattern.compile(IMGSRC_REG).matcher(image);
+            Matcher matcher= Pattern.compile(IMGSRC_REG).matcher(image);
             while (matcher.find()){
                 listImageSrc.add(matcher.group().substring(0, matcher.group().length()-1));
             }
